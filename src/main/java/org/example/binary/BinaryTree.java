@@ -24,6 +24,40 @@ public class BinaryTree<T extends Comparable<T>> {
         return root;
     }
 
+    /**
+     * 循环实现插入
+     * @param data
+     */
+    public void insert(T data){
+        if(root==null){
+            root = new Node<T>();
+            root.setData(data);
+        }else {
+            Node<T> parent;
+            Node<T> curr = root;
+            while (true){
+                parent = curr;
+                if(curr.getData().compareTo(data)<0){
+                    curr = curr.getLNode();
+                    if(curr==null){
+                        parent.setLNode(new Node<T>(data));
+                        return;
+                    }
+                }else {
+                    curr = curr.getRNode();
+                    if(curr==null){
+                        parent.setRNode(new Node<T>(data));
+                        return;
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * 递归实现插入
+     * @param data
+     */
     public void addNode(T data){
         if(root==null){
             root = new Node<T>();

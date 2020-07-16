@@ -8,7 +8,7 @@ public class BinaryTreeTest {
         BinaryTree<Integer> binaryTree = new BinaryTree<Integer>();
         Integer[] datas = {4,5,2,8,6,3,9};
         for(int i=0;i<datas.length;i++){
-            binaryTree.addNode(datas[i]);
+            binaryTree.insert(datas[i]);
         }
 
         binaryTree.postOrder();
