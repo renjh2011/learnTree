@@ -1,6 +1,6 @@
 package org.example.avl;
 
-public class AvlTree {
+public class AvlTreeBak {
     private AVLNode root;
     private final int LEFT = 1;
     private final int RIGHT = -1;
