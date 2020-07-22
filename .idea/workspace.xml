@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99f1eeae-a91b-4d0c-8f9f-3011b932dc79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnTree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/learnTree.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/avl/AvlTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/avl/AvlTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/binary/AVLTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/binary/AVLTreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/binary/BinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/binary/BinaryTreeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +70,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AVLTreeTest.avlTreeTest">
+  <component name="RunManager" selected="JUnit.AVLTreeTest.testLR1">
     <configuration name="AVLTreeTest.avlTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="learnTree" />
       <extension name="coverage">
@@ -88,6 +82,22 @@
       <option name="PACKAGE_NAME" value="org.example.binary" />
       <option name="MAIN_CLASS_NAME" value="org.example.binary.AVLTreeTest" />
       <option name="METHOD_NAME" value="avlTreeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AVLTreeTest.testLR1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="learnTree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.binary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.binary" />
+      <option name="MAIN_CLASS_NAME" value="org.example.binary.AVLTreeTest" />
+      <option name="METHOD_NAME" value="testLR1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,6 +137,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AVLTreeTest.testLR1" />
         <item itemvalue="JUnit.AVLTreeTest.avlTreeTest" />
         <item itemvalue="JUnit.BinaryTreeTest.testAdd" />
         <item itemvalue="JUnit.BinaryTreeTest.testSwap" />
@@ -157,7 +168,8 @@
       <updated>1594912017237</updated>
       <workItem from="1594912020058" duration="801000" />
       <workItem from="1595210473636" duration="18424000" />
-      <workItem from="1595241769507" duration="13731000" />
+      <workItem from="1595241769507" duration="14478000" />
+      <workItem from="1595398211391" duration="1161000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交 二叉树">
       <created>1594912183350</created>
@@ -185,50 +197,50 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="834" y="444" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1594912379338" />
-    <state x="715" y="229" key="#xdebugger.evaluate" timestamp="1595322536894">
+    <state x="715" y="229" key="#xdebugger.evaluate" timestamp="1595400411254">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="715" y="229" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595322536894" />
+    <state x="715" y="229" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1595400411254" />
     <state x="558" y="146" width="860" height="812" key="CommitChangelistDialog2" timestamp="1594912183061">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="558" y="146" width="860" height="812" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1594912183061" />
-    <state width="1879" height="337" key="GridCell.Tab.0.bottom" timestamp="1595322724175">
+    <state width="1879" height="337" key="GridCell.Tab.0.bottom" timestamp="1595400494754">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="337" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595322724175" />
+    <state width="1879" height="337" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595400494754" />
     <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1594912788355" />
-    <state width="1879" height="337" key="GridCell.Tab.0.center" timestamp="1595322724175">
+    <state width="1879" height="337" key="GridCell.Tab.0.center" timestamp="1595400494754">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="337" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595322724175" />
+    <state width="1879" height="337" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595400494754" />
     <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1594912788355" />
-    <state width="1879" height="337" key="GridCell.Tab.0.left" timestamp="1595322724174">
+    <state width="1879" height="337" key="GridCell.Tab.0.left" timestamp="1595400494754">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="337" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595322724174" />
+    <state width="1879" height="337" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595400494754" />
     <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1594912788355" />
-    <state width="1879" height="337" key="GridCell.Tab.0.right" timestamp="1595322724175">
+    <state width="1879" height="337" key="GridCell.Tab.0.right" timestamp="1595400494754">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="337" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595322724175" />
+    <state width="1879" height="337" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595400494754" />
     <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1594912788355" />
-    <state width="1879" height="337" key="GridCell.Tab.1.bottom" timestamp="1595322724914">
+    <state width="1879" height="337" key="GridCell.Tab.1.bottom" timestamp="1595400458173">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="337" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595322724914" />
-    <state width="1879" height="337" key="GridCell.Tab.1.center" timestamp="1595322724914">
+    <state width="1879" height="337" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595400458173" />
+    <state width="1879" height="337" key="GridCell.Tab.1.center" timestamp="1595400458173">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="337" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595322724914" />
-    <state width="1879" height="337" key="GridCell.Tab.1.left" timestamp="1595322724914">
+    <state width="1879" height="337" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595400458173" />
+    <state width="1879" height="337" key="GridCell.Tab.1.left" timestamp="1595400458172">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="337" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595322724914" />
-    <state width="1879" height="337" key="GridCell.Tab.1.right" timestamp="1595322724914">
+    <state width="1879" height="337" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595400458172" />
+    <state width="1879" height="337" key="GridCell.Tab.1.right" timestamp="1595400458173">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="337" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595322724914" />
+    <state width="1879" height="337" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595400458173" />
     <state x="491" y="168" key="SettingsEditor" timestamp="1595215891126">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -271,14 +283,19 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/avl/AvlTree.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="42" />
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/binary/AVLTreeTest.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/avl/AvlTree.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="43" />
+          <line>55</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/avl/AvlTree.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

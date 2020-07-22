@@ -70,7 +70,7 @@ public class AvlTree {
     public void fixAfterInsertion(AVLNode node, AVLNode newNode, int type) {
         if(type == LEFT) {
             AVLNode leftChild = node.leftChild;
-            if(leftChild.leftChild==newNode || leftChild.leftChild.leftChild==newNode || leftChild.leftChild.rightChild==newNode ){
+            if(leftChild.leftChild==newNode || (leftChild.leftChild!=null && (leftChild.leftChild.leftChild==newNode || leftChild.leftChild.rightChild==newNode)) ){
                 rightRotation(node);
             }else if(leftChild.rightChild==newNode || leftChild.rightChild.leftChild==newNode || leftChild.rightChild.rightChild==newNode){
                 leftRotation(leftChild);
