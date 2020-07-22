@@ -36,26 +36,27 @@ public class AvlTree {
                 //相同的不需要处理
             }
         } while (temp!=null);
+        AVLNode newNode = new AVLNode(p, data);
         if(t < 0) {
-            p.rightChild = new AVLNode(p, data);
+            p.rightChild = newNode;
         }
         else if(t > 0) {
-            p.leftChild = new AVLNode(p, data);
+            p.leftChild = newNode;
         }
-        rebuild(p);
+        rebuild(p,newNode);
     }
 
     /**
      * 平衡二叉树的方法
      * @param node
      */
-    public void rebuild(AVLNode node) {
+    public void rebuild(AVLNode node,AVLNode newNode) {
         while(node != null) {
             if(calcNodeBalanceValue(node) == MAX_LEFT) {
-                fixAfterInsertion(node, LEFT);
+                fixAfterInsertion(node, newNode,LEFT);
             }
             else if(calcNodeBalanceValue(node) == MAX_RIGHT) {
-                fixAfterInsertion(node, RIGHT);
+                fixAfterInsertion(node, newNode,RIGHT);
             }
             node = node.parent;
         }
@@ -66,26 +67,36 @@ public class AvlTree {
      * @param node
      * @param type
      */
-    public void fixAfterInsertion(AVLNode node, int type) {
+    public void fixAfterInsertion(AVLNode node, AVLNode newNode, int type) {
         if(type == LEFT) {
             AVLNode leftChild = node.leftChild;
-            if(leftChild.leftChild != null) {  //右旋
+            if(leftChild.leftChild==newNode || leftChild.leftChild.leftChild==newNode || leftChild.leftChild.rightChild==newNode ){
+                rightRotation(node);
+            }else if(leftChild.rightChild==newNode || leftChild.rightChild.leftChild==newNode || leftChild.rightChild.rightChild==newNode){
+                leftRotation(leftChild);
                 rightRotation(node);
             }
-            else if(leftChild.rightChild != null) {   //左右旋
-//                leftRotation(leftChild);
+            /*if(leftChild.rightChild != null) {   //左右旋
+                leftRotation(leftChild);
                 rightRotation(node);
-            }
+            } else if(leftChild.leftChild != null) {  //右旋
+                rightRotation(node);
+            }*/
         }
         else if(type == RIGHT) {
             AVLNode rightChild = node.rightChild;
-            if(rightChild.rightChild != null) {   //左旋
+            if(rightChild.rightChild==newNode || rightChild.rightChild.leftChild==newNode || rightChild.rightChild.rightChild==newNode ){
+                leftRotation(node);
+            }else if(rightChild.leftChild==newNode || rightChild.leftChild.leftChild==newNode || rightChild.leftChild.rightChild==newNode){
+                rightRotation(rightChild);
                 leftRotation(node);
             }
-            else if(rightChild.leftChild != null) {   //右左旋
+            /*if(rightChild.leftChild != null) {   //右左旋
                 rightRotation(rightChild);
-//                leftRotation(node);
-            }
+                leftRotation(node);
+            }else if(rightChild.rightChild != null) {   //左旋
+                leftRotation(node);
+            }*/
         }
     }
 
@@ -95,24 +106,6 @@ public class AvlTree {
      * @return
      */
     public void leftRotation(AVLNode node) {
-        /*if(node != null) {
-            AVLNode pointNode = node.rightChild;
-            node.rightChild = pointNode.leftChild;
-            if(pointNode.leftChild!=null){
-                pointNode.leftChild.parent = node;
-            }
-            pointNode.parent = node.parent;
-            if(node.parent==null){
-                this.root = pointNode;
-            }else if(node.parent.rightChild==node){
-                node.parent.rightChild=pointNode;
-            }
-            else if(node.parent.leftChild==node){
-                node.parent.leftChild=pointNode;
-            }
-            pointNode.leftChild = node;
-            node.parent = pointNode;
-        }*/
         if(node != null) {
             AVLNode rightChild = node.rightChild;
             node.rightChild = rightChild.leftChild;
@@ -140,21 +133,7 @@ public class AvlTree {
      */
     public void rightRotation(AVLNode node) {
         if(node != null) {
-            AVLNode p = node.parent;
-            if(p.parent==null){
-                this.root = node;
-                node.parent=null;
-                node.leftChild = p;
-                p.parent = node;
-            }else {
-                AVLNode pp = p.parent;
-                node.leftChild = p;
-                p.parent = node;
-                pp.rightChild = node;
-                node.parent = pp;
-            }
-
-            /*AVLNode leftChild = node.leftChild;
+            AVLNode leftChild = node.leftChild;
             node.leftChild = leftChild.rightChild;
             // 如果leftChild的右节点存在，则需将该右节点的父节点指给node节点
             if(leftChild.rightChild != null) {
@@ -173,7 +152,6 @@ public class AvlTree {
 
             leftChild.rightChild = node;
             node.parent = leftChild;
-            return leftChild;*/
         }
     }
     /**
